@@ -34,15 +34,16 @@ class AIOLazyProxy(Generic[ALPT]):
         self._aentered: bool = False
 
     async def load_if_necessary(self):
-        async with self._lock:
-            if not self._aentered:
-                # Needs loading
-                # TODO handle aexit...later?
-                if hasattr(self._obj, "__aenter__"):
-                    logger.info(f"Loading {self._obj}")
-                    await self._obj.__aenter__()
-                self._aentered = True
-                AIOLazyProxy._proxy_registry.append(self)
+        if not self._aentered:
+            async with self._lock:
+                if not self._aentered:
+                    # Needs loading
+                    # TODO handle aexit...later?
+                    if hasattr(self._obj, "__aenter__"):
+                        logger.info(f"Loading {self._obj}")
+                        await self._obj.__aenter__()
+                    self._aentered = True
+                    AIOLazyProxy._proxy_registry.append(self)
 
         return self._obj
 
