@@ -1,0 +1,17 @@
+[[package]]
+name = "clearcut"
+version = "0.1.2"
+description = "A straightforward and lightweight logging wrapper library"
+category = "main"
+optional = false
+python-versions = ">=3.6, <4"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "7bec351cfcb90cbcb2415f0f3353bb6a699a227ce0da7752d3c5201771be73e3"
+
+[metadata.files]
+clearcut = [
+    {file = "clearcut-0.1.2-py3-none-any.whl", hash = "sha256:7fc7f52c1656a352ca233d5a6baf8916d9647906ceae5f7b6226b98cd0f9ae83"},
+]
