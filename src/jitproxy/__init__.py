@@ -1,2 +1,1 @@
-from jitproxy.aio import AIOLazyProxy
-from jitproxy.standard import ContextLazyProxy, InitLazyProxy
+from jitproxy.jitproxy import AIOLazyProxy, StandardLazyProxy
