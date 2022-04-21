@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jitproxy"
-version = "1.0.0b1"
+version = "1.0.0"
 description = "JIT Lazy-loading Proxies for synch and AIO objects"
 readme = "README.md"
 authors = ["Austin Howard <austin@tangibleintelligence.com>"]
