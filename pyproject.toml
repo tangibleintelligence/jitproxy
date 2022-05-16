@@ -1,14 +1,23 @@
 [tool.poetry]
 name = "jitproxy"
-version = "1.1.0b1"
+version = "1.1.0"
 description = "JIT Lazy-loading Proxies for synch and AIO objects"
 readme = "README.md"
+homepage = "https://github.com/tangibleintelligence/jitproxy"
+repository = "https://github.com/tangibleintelligence/jitproxy"
 authors = ["Austin Howard <austin@tangibleintelligence.com>"]
 license = "MIT"
+keywords = [
+    "lazy-loading",
+    "initialization"
+]
+classifiers = [
+    "Intended Audience :: Developers"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-clearcut = "^0.1.2"
+clearcut = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
 
